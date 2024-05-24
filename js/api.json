@@ -1,0 +1,24 @@
+[
+    {
+        "id": "Programa de entrenamiento de fuerza",
+        "descripcion": "Nuestro programa de entrenamiento de fuerza se centra en ejercicios clave como sentadillas, peso muerto y press de banca, diseñados para potenciar tu fuerza muscular y mejorar tu rendimiento. Con una progresión adaptada a tus necesidades individuales, te guiaremos hacia el logro de tus objetivos. ¡Prepárate para desafiar tus límites y alcanzar nuevos niveles de fuerza con nosotros! ",
+        
+        "foto" : "./img/plan_fuerza.png"
+        
+    },
+
+    {
+        "id": "Programa de Hipertrofia",
+        "descripcion": "Descubre nuestro programa de hipertrofia diseñado para maximizar el crecimiento muscular en todo tu cuerpo. Con sesiones de entrenamiento estratégicamente diseñadas, te llevaremos a nuevos niveles de fuerza y definición muscular. ¡Prepárate para transformar tu cuerpo y alcanzar tus metas de tamaño muscular con nosotros! ",
+        "foto" : "./img/plan_hipertrofia.png"
+        
+    },
+
+    {
+        "id": "Programa de Pérdida de Grasa",
+        "descripcion": "Únete a nuestro programa de pérdida de grasa diseñado para quemar calorías y esculpir tu cuerpo. Con un enfoque en ejercicios cardiovasculares de alta intensidad y entrenamiento de intervalos, te guiaremos hacia tu mejor versión. Prepárate para desafiar tus límites y alcanzar tus metas de pérdida de peso con nosotros. ",
+        
+        "foto" : "./img/plan_perdida_grasa.png"
+        
+    }
+]

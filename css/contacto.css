@@ -1,148 +1,144 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    background-image: url(..//img/prueba.png);
-    background-repeat: repeat;
-    width: 100%;
-    height: 100%;
-    font-size: 16px; /* Tamaño de fuente base */
-  }
-  
-  #titulo {
-    font-family: "Varela Round", sans-serif;
-    text-align: center;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 3.125rem; 
-    color: #fff;
-    text-shadow: 2px 2px 0 #006bfb, 2px -2px 0 #006bfb, -2px 2px 0 #006bfb, -2px -2px 0 #006bfb, 2px 0px 0 #006bfb, 0px 2px 0 #006bfb, -2px 0px 0 #006bfb, 0px -2px 0 #006bfb, 2px 2px 0 #006bfb, 2px -2px 0 #006bfb, -2px 2px 0 #006bfb, -2px -2px 0 #006bfb, 2px 0px 0 #006bfb, 0px 2px 0 #000, -2px 0px 0 #006bfb, 0px -2px 0 #006bfb, 2px 2px 0 #006bfb, 2px -2px 0 #006bfb, -2px 2px 0 #006bfb, -2px -2px 0 #006bfb, 2px 0px 0 #006bfb, 0px 2px 0 #006bfb, -2px 0px 0 #006bfb, 0px -2px 0 #006bfb;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url(..//img/prueba.png);
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  font-size: 16px; /* Tamaño de fuente base */
+}
+
+#titulo {
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 3.125rem; 
+  color: #fff;
+  text-shadow: 2px 2px 0 #006bfb, 2px -2px 0 #006bfb, -2px 2px 0 #006bfb, -2px -2px 0 #006bfb, 2px 0px 0 #006bfb, 0px 2px 0 #006bfb, -2px 0px 0 #006bfb, 0px -2px 0 #006bfb, 2px 2px 0 #006bfb, 2px -2px 0 #006bfb, -2px 2px 0 #006bfb, -2px -2px 0 #006bfb, 2px 0px 0 #006bfb, 0px 2px 0 #000, -2px 0px 0 #006bfb, 0px -2px 0 #006bfb, 2px 2px 0 #006bfb, 2px -2px 0 #006bfb, -2px 2px 0 #006bfb, -2px -2px 0 #006bfb, 2px 0px 0 #006bfb, 0px 2px 0 #006bfb, -2px 0px 0 #006bfb, 0px -2px 0 #006bfb;
+}
+
+form {
+  margin: 0 auto;
+  width: 50%;
+  height: auto;
+  background-color: #0A0A0A;
+  border-top: 0.938rem solid #006bfb; 
+  border-left: 0.938rem solid #006bfb;
+  padding: 1.25rem; /* Añadido para mejor espaciamiento */
+}
+
+@media (max-width: 767px) {
   form {
-    margin: 0 auto;
-    width: 50%;
-    height: 600px;
-    background-color: #0A0A0A;
-    border-top: 0.938rem solid #006bfb; 
-    border-left: 0.938rem solid #006bfb;
-  }
-  
-  @media (max-width: 767px) {
-    form {
       width: 90%;
       height: auto;
-    }
   }
-  
-  @media (min-width: 768px) and (max-width: 1199px) {
-    form {
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  form {
       width: 70%;
-    }
   }
-  
-  fieldset {
-    border: none;
-  }
-  
-  input, textarea, select {
-    padding: 0.938rem; 
-    color: #000;
-  }
-  
-  .bloque {
-    margin-top: 3.125rem; 
-    margin-left: 1.25rem; 
-  }
-  
-  label {
-    font-size: 1.2em;
-    font-weight: 600;
-    margin-left: 1.25rem; 
-  }
-  
-  #input-nombre, #input-correo, #plan-seleccionado {
-    width: 60%;
-    height: 2.188rem; 
-    border-radius: 5px;
-    border-style: none;
-    margin-left: 6.25rem; 
-  }
-  
-  @media (max-width: 767px) {
-    #input-nombre, #input-correo, #plan-seleccionado {
-      width: 80%;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 1.875rem; /* Añadido para mejor espaciamiento entre fieldsets */
+}
+
+input, textarea, select {
+  padding: 0.938rem; 
+  color: #000;
+  border-radius: 5px; 
+  border: none; 
+}
+
+.bloque {
+  margin-top: 1.875rem; 
+  margin-left: 1.25rem; 
+}
+
+label {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-left: 1.25rem; 
+  display: inline-block; 
+  margin-bottom: 0.625rem; 
+}
+
+#input-nombre, #input-correo, #plan-seleccionado, #objetivos {
+  width: calc(100% - 2.5rem);
+  margin-left: 1.25rem; 
+}
+
+@media (max-width: 767px) {
+  #input-nombre, #input-correo, #plan-seleccionado, #objetivos {
+      width: calc(100% - 2.5rem);
       margin-left: 1.25rem; 
-    }
   }
-  
-  #input-correo {
-    margin-left: 6.875rem; 
-  }
-  
-  @media (max-width: 767px) {
-    #input-correo {
-      margin-left: 1.25rem; 
-    }
-  }
-  
-  #label-objetivos {
-    position: relative;
-    bottom: 5rem; 
-  }
-  
-  #objetivos {
-    display: inline-block;
-    width: 60%;
-    height: 9.375rem; 
-    margin-left: 5.625rem; 
-    resize: none;
-    border-radius: 5px;
-  }
-  
-  @media (max-width: 767px) {
-    #objetivos {
-      width: 80%;
-      margin-left: 1.25rem; 
-    }
-  }
-  
-  #plan-seleccionado {
-    margin-left: 8.125rem; 
-  }
-  
-  @media (max-width: 767px) {
-    #plan-seleccionado {
-      margin-left: 1.25rem; 
-    }
-  }
-  
-  select {
-    padding: 0;
-  }
-  
-  select option {
-    color: #000;
-  }
-  
-  #div-btn {
-    text-align: center;
-    margin-top: 1.25rem; 
-  }
-  
-  #btn-enviar {
-    color: #fff;
-    font-weight: 900;
-    background: #006bfb;
-    border: 2px solid #fff;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  #btn-enviar:hover {
-    opacity: 0.5;
-  }
+}
+
+#input-correo {
+  margin-left: 1.25rem; 
+}
+
+
+
+#objetivos {
+  display: block;
+  height: 9.375rem; 
+  resize: none;
+}
+
+#plan-seleccionado {
+  margin-left: 1.25rem; 
+ 
+}
+
+select {
+  padding: 10px;
+}
+
+select option {
+  color: #000;
+}
+
+#div-btn {
+  text-align: center;
+  margin-top: 1.25rem; 
+}
+
+#btn-enviar {
+  color: #fff;
+  font-weight: 900;
+  background: #006bfb;
+  border: 2px solid #fff;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 0.938rem 1.875rem; /* Añadido para mejor tamaño del botón */
+}
+
+#btn-enviar:hover {
+  opacity: 0.5;
+}
+
+/* Estilos añadidos para los radio buttons */
+fieldset legend {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-left: 1.25rem; 
+  color: #fff;
+}
+
+.bloque input[type="radio"] {
+  margin-right: 0.625rem; /* Añadido para separación entre el radio button y su label */
+}
+
+.bloque label {
+  margin-left: 0; /* Eliminada la margin-left para los labels dentro de fieldset */
+}
