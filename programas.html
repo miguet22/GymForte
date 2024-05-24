@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/programas.css">
     <link rel="icon" type="image/x-icon" href="./img/logo-removebg-preview.ico">
+    
 </head>
 
 <body>
@@ -22,6 +23,7 @@
                 <li><a href="index.html">INICIO</a></li>
                 <li> <a href="programas.html">PROGRAMAS</a></li>
                 <li><a href="contacto.html">CONTACTO</a></li>
+                
                 <li class="spacing-normal"><a href="./sobre_nosotros.html">SOBRE NOSOTROS</a></li>
             </ul>
         </nav>
@@ -31,16 +33,29 @@
         <h1 id="titulo">PROGRAMAS DE ENTRENAMIENTO</h1>
 
         <div id = "app">
-            <p> {{elemento}}</p>
-            <!-- aca va lo de la api
-            <div v-for="(plan, index) in datos" :key="index" class="plan">
-                <h2 class="subtitulo"><span>{{ plan.id }}</span></h2>
-                <img :src="plan.foto" :alt="plan.id" class="plan-img">
-                <p>{{ plan.descripcion }}</p>
-                <div class="boton-consultar"><a href="contacto.html">Consultar</a></div>
-            </div>
-            -->
+            
+
+           
+                
+         
+         
+             
+            
+            
+                <div v-for="(plan, index) in datos" :key="index" class="plan">
+                    <h2 class="subtitulo"><span>{{ plan.id }}</span></h2>
+                    <img :src="plan.foto" :alt="plan.id" class="plan-img">
+                    <p>{{ plan.descripcion }}</p>
+                    <div class="boton-consultar"><a href="contacto.html">Consultar</a></div>
+                </div>
+            
+             
+            
+          
+            
             <!-- originalmente sin api-->
+
+            <!-- 
             <div id="plan-1" class="plan">
                 <h2 class="subtitulo"><span id="subtitulo-1">Programa de entrenamiento de Fuerza</span></h2>
                 <img class="plan-img" src="img/plan_fuerza.png" alt="Plan de entrenamiento de fuerza">
@@ -59,7 +74,7 @@
                     cuerpo. Con sesiones de entrenamiento estratégicamente diseñadas, te llevaremos a nuevos niveles de
                     fuerza y definición muscular. ¡Prepárate para transformar tu cuerpo y alcanzar tus metas de tamaño
                     muscular con nosotros!</p>
-                <div class="boton-consultar"><a href="#">Consultar</a></div>
+                <div class="boton-consultar"><a href="contacto.html">Consultar</a></div>
             </div>
 
             <div id="plan-3" class="plan">
@@ -71,14 +86,20 @@
                     guiaremos hacia tu mejor versión. Prepárate para desafiar tus límites y alcanzar tus metas de
                     pérdida de peso con nosotros.</p>
             </div>
-            <div class="boton-consultar"><a href="#">Consultar</a></div>
-            
+            <div class="boton-consultar"><a href="contacto.html">Consultar</a></div>
+            -->
+
+            <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>      
+            <script src="./js/articulos.js"></script>
+         
         </div>
+
+        
 
     </main>
 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  
-    <script src="./js/consumir.js"></script>
+    
+   
 
     <footer>
         <img src="img/logo.jpg" alt="">
@@ -91,6 +112,10 @@
         <hr>
         <div><small>Copyright © 2024 | Gimnasio Forte | Todos los Derechos Reservados</small></div>
     </footer>
+
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <script src="./js/consumir.js"></script>
 </body>
 
 </html>

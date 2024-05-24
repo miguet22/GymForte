@@ -1,0 +1,23 @@
+
+[
+    {
+        "id": "Programa de Hipertrofia",
+        "descripcion":"  Descubre nuestro programa de hipertrofia diseñado para maximizar el crecimiento muscular en todo tu cuerpo. Con sesiones de entrenamiento estratégicamente diseñadas, te llevaremos a nuevos niveles de fuerza y definición muscular. ¡Prepárate para transformar tu cuerpo y alcanzar tus metas de tamaño muscular con nosotros!",
+        "foto" : "./img/plan_hipertrofia.png"
+    },
+    {
+        "id": "Programa de Perdida de Grasa",
+        "descripcion": "Únete a nuestro programa de pérdida de grasa diseñado para quemar calorías y esculpir tu cuerpo.Con un enfoque en ejercicios cardiovasculares de alta intensidad y entrenamiento de intervalos, te guiaremos hacia tu mejor versión. Prepárate para desafiar tus límites y alcanzar tus metas de pérdida de peso con nosotros.",
+        "foto" : "./img/plan_perdida_grasa.png"
+    },
+    {
+        "id": "Programa de Fuerza",
+        "descripcion":"Nuestro programa de entrenamiento de fuerza se centra en ejercicios clave como sentadillas, peso muerto y press de banca, diseñados para potenciar tu fuerza muscular y mejorar tu rendimiento. Con una progresión adaptada a tus necesidades individuales, te guiaremos hacia el logro de tus objetivos. ¡Prepárate para desafiar tus límites y alcanzar nuevos niveles de fuerza con nosotros!",
+        "foto" : "./img/plan_fuerza.png"
+    },
+    {
+        "id" :"Programa para Deportistas",
+        "descripcion": "  Nuestro programa de entrenamiento para deportistas se enfoca en ejercicios fundamentales como pliometría, sprints y entrenamiento de resistencia, diseñados para optimizar tu rendimiento atlético y aumentar tu velocidad, agilidad y potencia. Con una progresión personalizada adaptada a tus metas específicas y demandas del deporte, te guiaremos hacia el éxito competitivo. ¡Prepárate para superar tus límites y alcanzar nuevos niveles de excelencia deportiva con nosotros!",
+        "foto" : "./img/Deporte.png"
+    }
+]
