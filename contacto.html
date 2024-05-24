@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo-removebg-preview.ico">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div><a href="index.html"><img id="logo-nav" src="img/logo.jpg"></a></div>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li> <a href="programas.html">PROGRAMAS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li class="spacing-normal"><a href="./sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="titulo">CONTACTO</h1>
+        <form action="">
+            <fieldset>
+                <div class="bloque">
+                    <label for="input-nombre">Nombre</label>
+                    <input type="text" name="nombre" id="input-nombre" placeholder="John Doe">
+                </div>
+
+                <div class="bloque">
+                    <label for="input-correo">Correo</label>
+                    <input type="email" name="correo" id="input-correo" placeholder="john.doe@example.com">
+                </div>
+
+
+                <div class="bloque">
+                    <label id="label-objetivos" for="objetivos">Objetivos</label>
+                    <textarea name="" id="objetivos" cols="30" rows="10"
+                        placeholder="¿Cuáles son tus objetivos de entrenamiento?"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="bloque">
+                    <label for="plan-seleccionado">Plan</label>
+                    <select name="plan" id="plan-seleccionado">
+                        <option disabled selected>Seleccione una opción</option>
+                        <option value="programa-fuerza">Programa de entrenamiento de Fuerza</option>
+                        <option value="programa-hipertrofia">Programa de entrenamiento de Hipertrofia</option>
+                        <option value="programa-perdida-grasa">Programa de entrenamiento de Pérdida de Grasa</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <div id="div-btn"><input type="submit" name="enviar" id="btn-enviar" value="ENVIAR"></div>
+        </form>
+
+
+
+    </main>
+
+    <footer>
+        <img src="img/logo.jpg" alt="">
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li> <a href="programas.html">PROGRAMAS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li class="spacing-normal"><a href="sobre_nosotros.html">SOBRE NOSOTROS</a></li>
+        </ul>
+        <hr>
+        <div><small>Copyright © 2024 | Gimnasio Forte | Todos los Derechos Reservados</small></div>
+    </footer>
+</body>
+
+</html>

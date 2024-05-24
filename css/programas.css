@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url(..//img/prueba.png);
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+}
+
+#titulo {
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 2px 2px 0 #006bfb, 2px -2px 0 #006bfb, -2px 2px 0 #006bfb, -2px -2px 0 #006bfb, 2px 0px 0 #006bfb, 0px 2px 0 #006bfb, -2px 0px 0 #006bfb, 0px -2px 0 #006bfb, 2px 2px 0 #006bfb, 2px -2px 0 #006bfb, -2px 2px 0 #006bfb, -2px -2px 0 #006bfb, 2px 0px 0 #006bfb, 0px 2px 0 #000, -2px 0px 0 #006bfb, 0px -2px 0 #006bfb, 2px 2px 0 #006bfb, 2px -2px 0 #006bfb, -2px 2px 0 #006bfb, -2px -2px 0 #006bfb, 2px 0px 0 #006bfb, 0px 2px 0 #006bfb, -2px 0px 0 #006bfb, 0px -2px 0 #006bfb;
+}
+
+.plan {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.subtitulo, span {
+  font-size: 30px;
+  color: #006bfb;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.plan p {
+  width: 95%;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3em;
+  text-align: justify;
+  margin-top: 80px;
+  margin-right: 40px;
+}
+
+.plan-img {
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 200px;
+  float: left;
+}
+
+.boton-consultar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: #006bfb;
+  box-shadow: 5px -4px 26px 25px rgba(0,0,0,0.75);
+  transition: opacity 0.2s ease-in-out, border 0.1s ease-in-out;
+  margin: 20px auto;
+}
+
+.boton-consultar a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.boton-consultar:hover {
+  opacity: 0.5;
+  border: 3px solid #fff;
+}
+
+.plan p + .plan-description + .boton-consultar { 
+  margin-top: 20px;
+}
+
+.plan-description {
+  width: 95%;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3em;
+  text-align: justify;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+@media (max-width: 768px) {
+  #titulo {
+    font-size: 36px;
+  }
+
+  .subtitulo, span {
+    font-size: 24px;
+  }
+
+  .plan p, .plan-description {
+    font-size: 16px;
+  }
+
+  .plan-img {
+    width: 200px;
+    margin-left: 20px;
+  }
+
+  .boton-consultar {
+    margin: 20px auto;
+  }
+}

@@ -1,0 +1,2 @@
+- Hacer la página responsive (Media Queries)
+- Hacer el apartado Contacto

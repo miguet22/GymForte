@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=Lilita+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+html {
+    background-image: url(../img/photos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+main {
+    height: 100%;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#titulo {
+    font-family: "Jersey 25", sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 2px 2px 0 #006bfb, 2px -2px 0 #006bfb, -2px 2px 0 #006bfb, -2px -2px 0 #006bfb, 2px 0px 0 #006bfb, 0px 2px 0 #006bfb, -2px 0px 0 #006bfb, 0px -2px 0 #006bfb, 2px 2px 0 #006bfb, 2px -2px 0 #006bfb, -2px 2px 0 #006bfb, -2px -2px 0 #006bfb, 2px 0px 0 #006bfb, 0px 2px 0 #000, -2px 0px 0 #006bfb, 0px -2px 0 #006bfb, 2px 2px 0 #006bfb, 2px -2px 0 #006bfb, -2px 2px 0 #006bfb, -2px -2px 0 #006bfb, 2px 0px 0 #006bfb, 0px 2px 0 #006bfb, -2px 0px 0 #006bfb, 0px -2px 0 #006bfb;
+    padding-top: 80px;
+    margin-left: 20px;
+}
+
+#frase {
+    width: 500px;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    animation: text 2s linear infinite
+}
+
+#frase strong {
+    color: #006bfb;
+}
+
+@keyframes text {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(35deg);
+    }
+}
+
+#inscripcion-btn {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Lilita One", sans-serif;
+    font-size: 50px;
+    border: 2px solid white;
+    border-radius: 30px;
+    transition: 1s ease;
+}
+
+#inscripcion-btn a {
+    text-decoration: none;
+}
+
+#inscripcion-btn:hover {
+    opacity: 0.8;
+    background-color: #006bfb;
+}
+
+@media (max-width: 1024px) {
+    #titulo {
+        font-size: 80px;
+    }
+
+    #frase {
+        width: 400px;
+        font-size: 20px;
+    }
+
+    #inscripcion-btn {
+        width: 300px;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #titulo {
+        font-size: 60px;
+    }
+
+    #frase {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    #inscripcion-btn {
+        width: 250px;
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    #titulo {
+        font-size: 40px;
+    }
+
+    #frase {
+        width: 250px;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    #inscripcion-btn {
+        width: 200px;
+        font-size: 30px;
+    }
+}
