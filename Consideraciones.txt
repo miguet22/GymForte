@@ -1,0 +1,22 @@
+El consumo de la api, desde live server se ve perfecto, el tema es al usar en un navegador. 
+Esto sucede ya que :
+estricciones de seguridad del navegador que impiden el acceso a archivos locales debido a políticas de CORS (Cross-Origin Resource Sharing). 
+Cuando abres un archivo HTML localmente (es decir, usando un esquema file://), los navegadores suelen bloquear las solicitudes AJAX a archivos locales debido a estas políticas de seguridad.
+Pasos en chrome para poder ver la seccion "programas" 
+    Cierra todas las instancias de Chrome.
+
+    Abre una terminal o línea de comandos y ejecuta:
+
+    chrome.exe --disable-web-security --user-data-dir="C:\chrome_dev"
+
+    Asegúrate de cambiar la ruta C:\chrome_dev a un directorio que no existía anteriormente.
+
+
+En Firefox:
+
+    Abre una nueva pestaña y ve a about:config.
+    Busca security.fileuri.strict_origin_policy.
+    Establécelo en false.
+
+
+Reinicia Firefox después de hacer este cambio.
