@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const validDomains = ['gmail.com', 'hotmail.com', 'yahoo.com', 'outlook.com'];
 
-        // Validación del nombre
+        // validar nombre correcto
         if (!regexNombre.test(nombre.value)) {
             warnings.push('El nombre no es válido. No debe contener números.');
         }
 
-        // Validación del correo electrónico
+        // validar email
         if (!regexEmail.test(email.value)) {
             warnings.push('El email no es válido.');
         } else {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // Validación de nombre, correo, objetivos vacíos
+        // validar campos
         if (nombre.value.trim() === '') {
             warnings.push('Por favor, ingrese su nombre.');
         }
@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
             warnings.push('Por favor, ingrese sus objetivos de entrenamiento.');
         }
 
-        // Validación del plan
+        // validar plan
         if (plan.value === "Seleccione una opción") {
             warnings.push('Debe seleccionar un plan.');
         }
 
-        // Validación del turno seleccionado
+        //validar turno
         let turnoSeleccionado = false;
         turnos.forEach(turno => {
             if (turno.checked) {
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             warnings.push('Debe seleccionar un turno.');
         }
 
-        // Mostrar advertencias una por una
+        // mostrar advertencias una por una
         if (warnings.length > 0) {
             warnings.forEach(warning => {
                 alert('Advertencia:\n' + warning);

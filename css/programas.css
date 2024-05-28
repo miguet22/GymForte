@@ -65,7 +65,7 @@ html {
   margin-right: 10px;
 }
 
-.boton-consultar {
+.boton-consultar {  /* flexbox */
   display: flex;
   justify-content: center;
   align-items: center;

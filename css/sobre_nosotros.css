@@ -66,9 +66,9 @@ iframe {
 }
 
 #div-ubicacion {
-  display: flex; /* Activa el modelo de flexbox */
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */ 
+  display: flex; /* activa el modelo de flexbox */
+  justify-content: center; /* centrar horizontal */
+  align-items: center; /* centrar verticalmente */ 
 }
 
 #direccion {

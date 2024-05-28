@@ -15,7 +15,7 @@ footer {
   margin-top: 95px;
 }
 
-footer ul {
+footer ul {  /* flex box */
   display: flex;
   justify-content: flex-end;
   list-style-type: none;
