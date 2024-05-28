@@ -12,34 +12,36 @@ document.addEventListener('DOMContentLoaded', () => {
         let warnings = [];
         const regexNombre = /^[A-Za-z\s]+$/;
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const validDomains = ['gmail.com', 'hotmail.com', 'yahoo.com', 'outlook.com'];
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Patrón básico para validar email
 
-        // validar nombre correcto
-        if (!regexNombre.test(nombre.value)) {
-            warnings.push('El nombre no es válido. No debe contener números.');
-        }
-
+      
         // validar email
-        if (!regexEmail.test(email.value)) {
-            warnings.push('El email no es válido.');
-        } else {
-            const domain = email.value.split('@')[1];
-            if (!validDomains.includes(domain)) {
-                warnings.push('El email debe ser de uno de los siguientes dominios: @gmail.com, @hotmail.com, @yahoo.com, @outlook.com.');
-            }
-        }
-
+        
+        
         // validar campos
         if (nombre.value.trim() === '') {
             warnings.push('Por favor, ingrese su nombre.');
+        } else {
+            if (!regexNombre.test(nombre.value)) {
+                warnings.push('El nombre no es válido. No debe contener números.');
+            }
         }
+
         if (email.value.trim() === '') {
             warnings.push('Por favor, ingrese su correo electrónico.');
+        }else
+        {
+            if (!emailPattern.test(email.value)) {
+                warnings.push('El email no es válido. Debe contener un @ y terminar en .com.');
+            } 
         }
+
         if (objetivo.value.trim() === '') {
             warnings.push('Por favor, ingrese sus objetivos de entrenamiento.');
         }
 
+    
+        
         // validar plan
         if (plan.value === "Seleccione una opción") {
             warnings.push('Debe seleccionar un plan.');
